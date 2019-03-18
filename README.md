@@ -1,2 +1,1 @@
-# BTI
-Atividades Relacionadas ao BTI
+# BTI - UFRN 

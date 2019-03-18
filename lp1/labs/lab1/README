@@ -1,0 +1,31 @@
+Alunos:
+Márcio Tenório Júnior
+Erickson Moura de Lima
+
+Compilação e execução: 
+
+Ambas as questões tem a mesma estrutura: 'main.cpp','funcoes.cpp','funcoes.h'. Dessa forma, o MakeFile funciona da mesma forma para ambos:
+ make - compila, linka e gera um executável 'exe'
+ make compile - compila o código
+ make link - intercomunica os arquivos e gera o executável
+ make clear - limpa os arquivos objeto e executáveis
+  
+ 
+
+Questão 1:
+1. Tarefa 1:
+ Tivemos contratempos modularizando as funções, especialmente pela manipulação severa de strings e a quantidade.  
+
+
+Questão 2:
+
+1. Tarefa 1:
+  
+
+
+ Na tarefa 1, usamos a biblioteca <cmath>, como solicitado pelo problema, para encontrar os valores mais aproximados das funções trigonometricas: seno e cosseno. Com isso em maos, comparamos com os valores resultantes das funções 'seno_min_taylor' e 'cosseno_min_taylor', dados no problemas para calcular tais funcoes trigonometricas baseadas em equacoes. No entanto, observamos que os valores apresentam uma grande diferença, nos levando a ponderar sobre a precisão das equacões quanto ao calculo seno e cosseno.
+
+2. Tarefa 2:
+ Já na segunda parte da questao, temos que aproximar os valores de seno e cosseno da questão anterior usando uma funcoes mais precisa(série de Taylor), que nos traga ao menos as diferencas de a) 0,0001, b) 0,00001 e c) 0,000001. Assim, implementamos a funcão 'seno_compare' para comparar o valor do seno, calculado anteriormente, com o da biblioteca cmath. A cada iteração, se o valor ainda não aproximar-se do correto, executamos-o novamente na função, até, no mínimo, ficar com 0,0001 de diferença. Com isso, ao exercutar o código com vários valores, observamos que o programa imprime NaN(not-a-number, não consegue ser representado, pois caracteriza um underflow) com valores de ângulo superiores a 2.7. 
+
+Anexamos o profile.log do Gprof no repositório.   
